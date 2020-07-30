@@ -1,7 +1,18 @@
+
 <template>
-  <router-view></router-view>
+  <div>
+    <NavComponent></NavComponent>
+    <main>
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
 
 <script>
-export default {};
+import NavComponent from "./components/posts/Nav.vue";
+export default {
+  components: {
+    NavComponent,
+  },
+};
 </script>
